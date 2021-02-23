@@ -165,6 +165,10 @@ SELECT first_name, AVG(IFNULL(grade,0)) AS average FROM students
 LEFT JOIN papers
     ON papers.student_id = students.id GROUP BY students.first_name ORDER BY average DESC;
     
+SELECT first_name, AVG(IFNULL(grade,0)) AS average FROM students
+LEFT JOIN papers
+    ON papers.student_id = students.id GROUP BY students.id ORDER BY average DESC;
+    
 # FIFTH TABLE --> LEFT JOIN WITH CASE
 SELECT first_name, AVG(IFNULL(grade,0)) AS average,
     CASE 
@@ -173,4 +177,4 @@ SELECT first_name, AVG(IFNULL(grade,0)) AS average,
     END AS passing_status
 FROM students
 LEFT JOIN papers
-    ON papers.student_id = students.id GROUP BY students.first_name ORDER BY average DESC;
+    ON papers.student_id = students.id GROUP BY students.id ORDER BY average DESC;
