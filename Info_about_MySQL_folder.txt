@@ -1,0 +1,7 @@
+This file contains the code which I have taken as notes in learning the lecture series :-
+
+The Ultimate MySQL BootCamp Go From sql beginner to expert by Colt.
+https://www.udemy.com/course/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert.
+
+I have configured th GoormIDE container as per the course required docker image and I do commits from there.
+https://ide.goorm.io/my/dashboard
