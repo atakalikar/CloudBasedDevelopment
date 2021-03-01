@@ -70,4 +70,3 @@ CREATE TABLE photo_tags(
 );
 
 # Primary Key makes sure one tag only once in one photo
-
